@@ -17,9 +17,7 @@ void remove_node ( struct Node node, unsigned int index );
 void pop_front ( struct Node node );
 void pop_back ( struct Node node );
 Task *back ( struct Node node );
-Task *take_from_index ( struct Node node, unsigned int index );
-
-
+Task *take_from_index ( struct Node node, unsigned int index ) ;
 
 
 

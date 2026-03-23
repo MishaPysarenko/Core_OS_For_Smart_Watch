@@ -1,0 +1,20 @@
+#ifndef INC_TASKSCHEDULER_H_
+#define INC_TASKSCHEDULER_H_
+
+typedef struct  { // Одиниці задачі
+
+
+
+
+} Task ;
+
+struct Node { // Контейнер нод для таска
+ Task task;
+struct Node * pNext;
+};
+
+void push_back ( struct Node node, Task task );
+void push_front ( struct Node node, Task task );
+void RemoveNode ( struct Node node, unsigned int index );
+
+#endif /* INC_TASKSCHEDULER_H_ */

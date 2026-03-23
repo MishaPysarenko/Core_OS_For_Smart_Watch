@@ -8,7 +8,7 @@ typedef struct  { // Одиниці задачі
 struct Node { // Контейнер нод для таска
  Task *task;
 struct Node * pNext;
-unsigned char size;         //1bajt
+unsigned long size         //8 bajt
 };
 
 void push_back ( struct Node node, Task *task );

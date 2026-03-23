@@ -1,0 +1,12 @@
+#ifndef INC_TASKSCHEDULER_H_
+#define INC_TASKSCHEDULER_H_
+
+struct Task { // Одиниці задачі
+
+}
+
+
+
+
+
+#endif /* INC_TASKSCHEDULER_H_ */

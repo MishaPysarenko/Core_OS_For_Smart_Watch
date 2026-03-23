@@ -1,0 +1,69 @@
+!SESSION 2026-03-09 20:27:31.189 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pl_PL
+Framework arguments:  -keyring /Users/deodanki/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/deodanki/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-09 20:29:31.799
+!MESSAGE Log4j2 initialized with config file /Users/deodanki/Documents/Projects/Core_OS_For_Smart_Watch/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-09 20:29:38.287
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2026-03-09 20:29:38.349
+!MESSAGE ProjectImporter: mdfind -name lsregister didn't returned anything
+!SESSION 2026-03-16 18:18:39.582 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pl_PL
+Framework arguments:  -keyring /Users/deodanki/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/deodanki/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-16 18:21:43.584
+!MESSAGE Log4j2 initialized with config file /Users/deodanki/Documents/Projects/Core_OS_For_Smart_Watch/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-16 18:21:50.017
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2026-03-16 18:21:50.094
+!MESSAGE ProjectImporter: mdfind -name lsregister didn't returned anything
+!SESSION 2026-03-16 18:40:12.333 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pl_PL
+Framework arguments:  -keyring /Users/deodanki/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/deodanki/.eclipse_keyring -data /Users/deodanki/Documents/Projects/Core_OS_For_Smart_Watch
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-16 18:40:20.871
+!MESSAGE Log4j2 initialized with config file /Users/deodanki/Documents/Projects/Core_OS_For_Smart_Watch/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2026-03-16 18:40:26.609
+!MESSAGE ProjectImporter: mdfind -name lsregister didn't returned anything
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-16 18:40:26.722
+!MESSAGE Started RMI Server, listening on port 41339
+
+!ENTRY org.eclipse.cdt.ui 4 0 2026-03-16 20:07:05.893
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element taskScheduler.h does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2026-03-16 20:07:05.902
+!MESSAGE Element taskScheduler.h does not exist.

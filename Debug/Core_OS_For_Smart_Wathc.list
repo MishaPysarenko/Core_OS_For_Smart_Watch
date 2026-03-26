@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00015763  00000000  00000000  0000530a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00003f81  00000000  00000000  0001aa6d  2**0
+ 17 .debug_line   00003f7f  00000000  00000000  0001aa6d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0007b961  00000000  00000000  0001e9ee  2**0
+ 18 .debug_str    0007b961  00000000  00000000  0001e9ec  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0009a34f  2**0
+ 19 .comment      00000043  00000000  00000000  0009a34d  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000bbc  00000000  00000000  0009a394  2**2
+ 20 .debug_frame  00000bbc  00000000  00000000  0009a390  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000065  00000000  00000000  0009af50  2**0
+ 21 .debug_line_str 00000065  00000000  00000000  0009af4c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -79,42 +79,29 @@ Disassembly of section .text:
  8000148:	08000d94 	.word	0x08000d94
 
 0800014c <main>:
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+
+#include "main.h"
+
+void SystemClock_Config(void);
 int main(void)
 {
  800014c:	b580      	push	{r7, lr}
  800014e:	af00      	add	r7, sp, #0
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
  8000150:	f000 f8d0 	bl	80002f4 <HAL_Init>
-  /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
   SystemClock_Config();
  8000154:	f000 f802 	bl	800015c <SystemClock_Config>
 
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
  8000158:	bf00      	nop
  800015a:	e7fd      	b.n	8000158 <main+0xc>
 
 0800015c <SystemClock_Config>:
-/**
-  * @brief System Clock Configuration
-  * @retval None
-  */
+
+  }
+}
+
 void SystemClock_Config(void)
 {
  800015c:	b580      	push	{r7, lr}

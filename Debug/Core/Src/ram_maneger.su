@@ -1,0 +1,5 @@
+../Core/Src/ram_maneger.c:3:6:heapInit	4	static
+../Core/Src/ram_maneger.c:11:7:malloc	48	static
+../Core/Src/ram_maneger.c:40:6:free	40	static
+../Core/Src/ram_maneger.c:64:7:calloc	64	static
+../Core/Src/ram_maneger.c:83:7:realloc	56	static

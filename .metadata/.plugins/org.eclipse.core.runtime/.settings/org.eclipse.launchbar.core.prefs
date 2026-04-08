@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Core_OS_For_Smart_Watch
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Core_OS_For_Smart_Watch/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Core_OS_For_Smart_Watch/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

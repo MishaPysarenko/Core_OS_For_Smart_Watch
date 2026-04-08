@@ -6,18 +6,21 @@ typedef struct  { // Одиниці задачі
 
 } Task ;
 
+struct Node;
+typedef struct Node Node ;
+
 struct Node { // Контейнер нод для таска
 	Task *task;
-	struct Node * pNext;
+	Node * pNext;
 	uint_8 size;         //1bajt
 };
 
-void push_back ( struct Node node, Task *task );
-void push_front ( struct Node node, Task *task );
-void remove_node ( struct Node node, unsigned int index );
-void pop_front ( struct Node node );
-void pop_back ( struct Node node );
-Task *back ( struct Node node );
-Task *take_from_index ( struct Node node, unsigned int index );
+void push_back ( Node *node, Task *task );
+void push_front ( Node *node, Task *task );
+void remove_node ( Node *node, unsigned int index );
+void pop_front ( Node *node );
+void pop_back ( Node *node );
+Task *back ( Node *node );
+Task *take_from_index ( Node *node, unsigned int index );
 
 #endif /* INC_TASKSCHEDULER_H_ */

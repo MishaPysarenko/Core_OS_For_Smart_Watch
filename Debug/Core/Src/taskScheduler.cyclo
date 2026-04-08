@@ -1,0 +1,7 @@
+../Core/Src/taskScheduler.c:10:6:push_back	3
+../Core/Src/taskScheduler.c:29:6:push_front	2
+../Core/Src/taskScheduler.c:45:6:remove_node	1
+../Core/Src/taskScheduler.c:49:6:pop_front	1
+../Core/Src/taskScheduler.c:53:6:pop_back	1
+../Core/Src/taskScheduler.c:57:7:back	1
+../Core/Src/taskScheduler.c:61:7:take_from_index	1

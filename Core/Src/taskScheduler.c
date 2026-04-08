@@ -42,7 +42,7 @@ void push_front ( Node *node, Task *task ) {
 
 }
 
-void remove_node ( Node *node, Task *task ) {
+void remove_node ( Node *node, unsigned int index  ) {
 
 }
 

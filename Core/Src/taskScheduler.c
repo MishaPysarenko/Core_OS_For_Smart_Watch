@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "taskScheduler.h"
 /*
  * taskScheduler.c
@@ -61,3 +62,108 @@ Task *back ( Node *node ) {
 Task *take_from_index ( Node *node, unsigned int index ) {
 
 }
+=======
+#include "taskScheduler.h"
+/*
+ * taskScheduler.c
+ *
+ *  Created on: Mar 9, 2026
+ *      Author: Mike
+ */
+
+
+void push_back ( Node *node, Task *task ){
+
+	if (node == nullptr){
+		node = malloc ( sizeof (Node) );
+		node -> task = task ;
+		return ;
+	}
+
+	Node *curent = node ;
+	while(curent -> pNext != nullptr){
+		curent = curent -> pNext ;
+	}
+
+	curent -> pNext = malloc ( sizeof (Node) );
+
+	curent -> pNext -> task = task ;
+
+}
+
+void push_front ( Node *node, Task *task ) {
+
+	if ( node == nullptr){
+		node = malloc ( sizeof (Node) );
+		node -> task = task ;
+		return ;
+	}
+
+	Node *curent = node ;
+	node = malloc ( sizeof (Node) );
+	node -> pNext = curent ;
+	node -> task = task ;
+
+}
+
+void remove_node ( Node *node, unsigned int index ) {
+	Node *curent = node ;
+	if (index == 0){
+		node = node -> pNext;
+		free (curent);
+	}
+	Node *BeforeCurent ;
+	for ( unsigned int i = 0 ; i < index ; i++ ) {
+		if ( curent -> pNext == nullptr ) {
+			return
+		}
+		BeforeCurent = curent
+		curent = curent -> pNext ;
+	}
+
+	BeforeCurent -> pNext = BeforeCurent -> pNext -> pNext;
+
+	free (curent);
+
+}
+
+void pop_front ( Node *node ) {
+	Node *curent = node ;
+	node = node -> pNext;
+	free (curent);
+}
+
+void pop_back ( Node *node ) {
+	Node *curent = node ;
+	while(curent -> pNext != nullptr){
+		curent = curent -> pNext ;
+	}
+	free (curent);
+
+Task *back ( Node *node ) {
+	Node *curent = node ;
+	while(curent -> pNext != nullptr){
+		curent = curent -> pNext ;
+	}
+	return curent -> task;
+}
+
+Task *take_from_index ( Node *node, unsigned int index ) {
+	if (node == nullptr) {
+			return nullptr;
+		}
+
+		Node *current = node;
+
+		for (unsigned int i = 0; i < index; i++) {
+
+			if (current->pNext == nullptr) {
+				return nullptr;
+			}
+
+			current = current->pNext;
+		}
+
+		return current->task;
+}
+>>>>>>> 35d7dbb (a tebe grebe)

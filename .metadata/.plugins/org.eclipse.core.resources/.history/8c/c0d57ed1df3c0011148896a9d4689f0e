@@ -2,24 +2,12 @@
 #define INC_TASKSCHEDULER_H_
 #include "ram_maneger.h"
 
-enum task_status{
-	ready =  0,
-	running = 1 << 0,
-	bloked = 1 << 1,
-	suspended = 1 << 2,
-	deleted = 1 << 3
-};
-
-typedef enum task_status task_status ;
-
 typedef struct { // Одиниці задачі
 
 uint_8 stack_pointer ;
 size_t  stack_size ;
 unit_8 stack_top ;
 unit_8 stack_bottom ;
-task_status status ;
-size_t waiting_object, timeout_counter ;
 
 } Task;
 

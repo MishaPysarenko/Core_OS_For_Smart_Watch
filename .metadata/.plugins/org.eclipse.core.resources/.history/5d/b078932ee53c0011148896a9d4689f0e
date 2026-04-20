@@ -48,6 +48,10 @@ void init_taskSchelduler ();
 void create_task (Task *task);
 void delete_task (Task *task);
 void suspended_task (Task *task);
-void task_swicher (Node *list);
+void task_swicher ( Node *list);
+
+
+
+
 
 #endif /* INC_TASKSCHEDULER_H_ */

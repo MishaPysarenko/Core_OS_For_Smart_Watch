@@ -50,9 +50,9 @@ void remove_node ( Node *node, unsigned int index ) {
 	Node *BeforeCurent ;
 	for ( unsigned int i = 0 ; i < index ; i++ ) {
 		if ( curent -> pNext == nullptr ) {
-			return
+			return;
 		}
-		BeforeCurent = curent
+		BeforeCurent = curent;
 		curent = curent -> pNext ;
 	}
 
@@ -74,6 +74,7 @@ void pop_back ( Node *node ) {
 		curent = curent -> pNext ;
 	}
 	free (curent);
+}
 
 Task *back ( Node *node ) {
 	Node *curent = node ;

@@ -16,8 +16,8 @@ typedef struct { // Одиниці задачі
 
 uint_8 stack_pointer ;
 size_t  stack_size ;
-unit_8 stack_top ;
-unit_8 stack_bottom ;
+uint_8 stack_top ;
+uint_8 stack_bottom ;
 task_status status ;
 size_t waiting_object, timeout_counter ;
 

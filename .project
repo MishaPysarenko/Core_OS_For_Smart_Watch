@@ -29,4 +29,46 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>source</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>source/diskio.c</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/diskio.c</locationURI>
+		</link>
+		<link>
+			<name>source/diskio.h</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/diskio.h</locationURI>
+		</link>
+		<link>
+			<name>source/ff.c</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/ff.c</locationURI>
+		</link>
+		<link>
+			<name>source/ff.h</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/ff.h</locationURI>
+		</link>
+		<link>
+			<name>source/ffconf.h</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/ffconf.h</locationURI>
+		</link>
+		<link>
+			<name>source/ffsystem.c</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/ffsystem.c</locationURI>
+		</link>
+		<link>
+			<name>source/ffunicode.c</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Core/source/ffunicode.c</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

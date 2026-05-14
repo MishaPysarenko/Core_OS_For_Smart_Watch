@@ -15,6 +15,7 @@ typedef enum task_status task_status ;
 typedef struct { // Одиниці задачі
 
 uint_8 stack_pointer ;
+uint_16 taksID;
 size_t  stack_size ;
 uint_8 stack_top ;
 uint_8 stack_bottom ;
@@ -40,9 +41,12 @@ void pop_back ( Node *node );
 Task *back ( Node *node );
 Task *take_from_index ( Node *node, unsigned int index );
 
-static Node * running_task_list;
+static bool isTaskSchelderInit = 0 ;
+static uint_16 amount_task;
+static Task * current_task;
+static Node * task_list;
 static Node * ready_task_list;
-static Node * suspended_task;
+static Node * suspended_task_list;
 
 void init_taskSchelduler ();
 void create_task (Task *task);

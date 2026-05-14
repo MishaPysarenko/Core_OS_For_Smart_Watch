@@ -107,18 +107,18 @@ void init_taskSchelduler () {
 
 }
 
-void create_task () {
+void create_task (Task *task) {
 
 }
 
-void delete_task () {
+void delete_task (Task *task) {
 
 }
 
-void suspended_task () {
+void suspended_task (Task *task) {
 
 }
 
-void task_swicher () {
+void task_swicher (Node *list) {
 
 }

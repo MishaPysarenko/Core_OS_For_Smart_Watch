@@ -40,7 +40,8 @@ void pop_back ( Node *node );
 Task *back ( Node *node );
 Task *take_from_index ( Node *node, unsigned int index );
 
-static Node * running_task_list;
+static Task * current_task;
+static Node * task_list;
 static Node * ready_task_list;
 static Node * suspended_task;
 
@@ -48,6 +49,6 @@ void init_taskSchelduler ();
 void create_task (Task *task);
 void delete_task (Task *task);
 void suspended_task (Task *task);
-void task_swicher ( Node *list);
+void task_swicher (Node *list);
 
 #endif /* INC_TASKSCHEDULER_H_ */

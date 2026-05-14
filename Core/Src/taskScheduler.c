@@ -104,10 +104,15 @@ Task *take_from_index ( Node *node, unsigned int index ) {
 }
 
 void init_taskSchelduler () {
-
+	amount_task = 0 ;
+	current_task = nullptr;
+	ready_task_list = nullptr;
+	suspended_task_list = nullptr;
+	isTaskSchelderInit = 1;
 }
 
 void create_task (Task *task) {
+
 
 }
 

@@ -7,6 +7,7 @@
 typedef unsigned long long size_t;
 typedef unsigned char uint_8;
 typedef unsigned char bool;
+typedef unsigned short int uint_16;
 #define true 1
 #define false 0
 

@@ -74,6 +74,7 @@ void pop_back ( Node *node ) {
 		curent = curent -> pNext ;
 	}
 	free (curent);
+}
 
 Task *back ( Node *node ) {
 	Node *curent = node ;
@@ -100,4 +101,29 @@ Task *take_from_index ( Node *node, unsigned int index ) {
 		}
 
 		return current->task;
+}
+
+void init_taskSchelduler () {
+	amount_task = 0 ;
+	current_task = nullptr;
+	ready_task_list = nullptr;
+
+}
+
+void create_task (Task *task) {
+
+
+
+}
+
+void delete_task (Task *task) {
+
+}
+
+void suspended_task_list (Task *task) {
+
+}
+
+void task_swicher (Node *list) {
+
 }

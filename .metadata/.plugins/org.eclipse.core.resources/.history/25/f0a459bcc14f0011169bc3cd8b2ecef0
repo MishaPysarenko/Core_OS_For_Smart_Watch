@@ -112,37 +112,11 @@ void init_taskSchelduler () {
 }
 
 void create_task (Task *task) {
-	task -> taskID = amount_task;
-	task -> status = 0;
-	amount_task++ ;
-	push_front (ready_task_list, task);
-	if (current_task == nullptr) {
-		current_task = task;
-	}
+
+
 }
 
 void delete_task (Task *task) {
-	task -> taskID = amount_task;
-	amount_task-- ;
-	if (task -> status == 0){
-		uint_8 index = 0;
-		for(uint_8 i = 0 ; i < ready_task_list -> size; i++){
-			if(take_from_index (ready_task_list, i) == task){
-				index = i;
-			}
-		}
-		remove_node (ready_task_list, index);
-		free (task);
-	} else {
-		uint_8 index = 0;
-		for(uint_8 i = 0 ; i < suspended_task_list -> size; i++){
-			if(take_from_index (suspended_task_list, i) == task){
-				index = i;
-			}
-		}
-		remove_node (suspended_task_list, index);
-		free (task);
-	}
 
 }
 
